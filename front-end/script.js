@@ -87,8 +87,10 @@ axios.get("http://localhost:8080/games").then(res => {
         editBtn.innerHTML = "Edit";
         editBtn.addEventListener('click', function () {
             loadForm(item)
-        })
+        });
 
+        deleteBtn.classList.add('bg-red-500', 'hover:bg-blue-700', 'text-white', 'font-bold', 'py-2', 'px-4', 'rounded');
+        editBtn.classList.add('bg-blue-500', 'hover:bg-blue-700', 'text-white', 'font-bold', 'py-2', 'px-4', 'rounded');
 
         item.appendChild(editBtn)
         item.appendChild(deleteBtn)
